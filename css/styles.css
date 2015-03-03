@@ -2,6 +2,50 @@ img {
   margin: auto;
 }
 
-#carousel-example-generic {
+.row {
   margin-bottom: 25px;
+}
+
+nav {
+  margin-top: 25px;
+}
+
+figure {
+  margin-bottom: 25px;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+
+figcaption {
+  margin: 25px auto;
+}
+
+.btn {
+  margin-top: 220px;
+}
+
+#carousel {
+  border-bottom: 1px solid #eee;
+}
+
+#carousel figure {
+  border: 0;
+}
+
+#carousel figcaption {
+  color: #fff;
+  text-shadow: 0 0 10px #000;
+  background: rgba(0,0,0,.25);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#carousel figcaption h4 {
+  font-size: 24px;
+}
+
+#carousel figcaption p {
+  font-size: 16px;
 }

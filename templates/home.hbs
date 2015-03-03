@@ -1,94 +1,55 @@
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <a href="#">
-      <img src="images/sleepy-dog-of-dog.jpg" alt="Sleepy Dog of Dog">
-      <div class="carousel-caption">
-        <h3>The 7 best dogs ever</h3>
-        <p>You won't believe what happens next!</p>
-      </div>
-      </a>
+<div class="row" id="carousel">
+    <div class="col-md-1">
+      <button class="btn btn-default btn-lg" {{action "previousSlide"}}>&lt;</button>
     </div>
-
-    <div class="item">
-      <a href="#">
-        <img src="images/churchy-church-of-church.jpg" alt="Amen">
-        <div class="carousel-caption">
-          <h3>The churchiest church that ever churched</h3>
+    <div class="col-md-10">
+      <figure>
+        <img class="img-responsive" {{bind-attr src=currentImage}}>
+        <figcaption>
+          <h4>{{currentHeadline}}</h4>
           <p>You won't believe what happens next!</p>
-        </div>
-      </a>
+        </figcaption>
+      </figure>
     </div>
-
-    <div class="item">
-      <a href="#">
-        <img src="images/happy-beach-of-life.jpg" alt="Bora?">
-        <div class="carousel-caption">
-          <h3>Let's bora bora on Borabora</h3>
-          <p>You won't believe what happens next (in 9 months)!</p>
-        </div>
-      </a>
+    <div class="col-md-1">
+      <button class="btn btn-default btn-lg" {{action "nextSlide"}}>&gt;</button>
     </div>
-
-    <div class="item">
-      <a href="#">
-        <img src="images/depressing-beach-of-death.jpg" alt="Sigh">
-        <div class="carousel-caption">
-          <h3>You know you don't</h3>
-          <p>You won't believe what happens next!</p>
-        </div>
-      </a>
-    </div>
-  </div>
-
-  <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
 </div>
 
 <div class="row">
   {{#link-to "article01"}}
-    <div class="col-md-6">
+    <div class="col-md-4">
       <figure>
-      <img class="img-responsive" src="//placehold.it/350x200">
+        <img class="img-responsive" src="//placehold.it/360x200">
         <figcaption><p>This is the first article. Woo.</p></figcaption>
       </figure>
     </div>
   {{/link-to}}
   {{#link-to "article02"}}
-    <div class="col-md-6">
-      <img class="img-responsive" src="//placehold.it/350x200">
-      <p>Article two is here too!</p>
+    <div class="col-md-4">
+      <figure>
+        <img class="img-responsive" src="//placehold.it/360x200">
+        <figcaption><p>Article two is here too!</p></figcaption>
+      </figure>
     </div>
   {{/link-to}}
 </div>
 
 <div class="row">
   {{#link-to "article03"}}
-    <div class="col-md-6">
-      <img class="img-responsive" src="//placehold.it/350x200">
-      <p>Three is the charm!</p>
+    <div class="col-md-4">
+      <figure>
+        <img class="img-responsive" src="//placehold.it/360x200">
+        <figcaption><p>Three is the charm!</p></figcaption>
+      </figure>
     </div>
   {{/link-to}}
   {{#link-to "article04"}}
-    <div class="col-md-6">
-      <img class="img-responsive" src="//placehold.it/350x200">
-      <p>Sucks to be 4.</p>
+    <div class="col-md-4">
+      <figure>
+        <img class="img-responsive" src="//placehold.it/360x200">
+        <figcaption><p>Sucks to be 4.</p></figcaption>
+      </figure>
     </div>
   {{/link-to}}
 </div>
