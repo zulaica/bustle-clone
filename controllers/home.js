@@ -1,8 +1,10 @@
 Bustle.HomeController = Ember.Controller.extend({
-  currentImage: "images/sleepy-dog-of-dog.jpg",
-  currentHeadline: "This dog is taking a nap.",
   imageArray: ["images/sleepy-dog-of-dog.jpg", "images/depressing-beach-of-death.jpg", "images/churchy-church-of-church.jpg", "images/happy-beach-of-life.jpg"],
   headlineArray: ["This dog is taking a nap.", "The dog is taking an eternal nap.", "The dog is praying. Duh.", "The dog is drinking some sort of tropical beverage."],
+  randomIndex: function() { return this.imageArray[Math.floor(Math.random() * this.imageArray.length)] },
+  // currentImage: this.imageArray[this.randomIndex],
+  currentImage: "images/sleepy-dog-of-dog.jpg",
+  currentHeadline: "This dog is taking a nap.",
   actions: {
 
     nextSlide: function() {
